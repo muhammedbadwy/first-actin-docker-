@@ -10,5 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: action/checkout@v3
+      - name: 'test git action'
+        run: pwd
+
+      - name: 'test git action'
+        run: pwd  
+
+
+
+
+
 
