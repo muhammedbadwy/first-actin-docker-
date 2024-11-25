@@ -10,11 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'test git action'
-        run: pwd
-
-      - name: 'test git action'
-        run: pwd  
+      - uses: action/checkout@v3
+      
+      -name: "login to docker hup"
+        run: docker login --username ${{secrets.DOCKER_USERNAME}} --password ${{secrets.DOCKER_PASSWORD}}
 
 
 
