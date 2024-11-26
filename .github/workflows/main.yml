@@ -18,7 +18,7 @@ jobs:
         run: docker build -t ${{secrets.DOCKER_USERNAME}}/myfirstaction .
 
       - name: "push docker hup"
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/myfirstaction 
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/myfirstaction:dev 
      
 
 
